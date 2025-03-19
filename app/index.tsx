@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TextInput} from 'react-native';
+import { StyleSheet, Text, View, TextInput} from 'react-native';
 import { Link, useRouter } from 'expo-router';
 import React from 'react';
 
@@ -9,9 +9,10 @@ const Index = () => {
   const router = useRouter()
 
   function handleLogin() {
-    if (email === 'admin' && password === 'admin') {
+    if (email === 'usuario' && password === 'usuario') {
       console.log('Login success', email + " "+ password);
       router.push('/funcionario')
+      
     } else if (email === 'dentista' && password === 'dentista') {
       console.log('Login success', email + " "+ password);
       router.push('/dentista')
@@ -28,10 +29,6 @@ const Index = () => {
     <TextInput placeholder='Senha' secureTextEntry></TextInput>
 
     <Link href='/funcionario'>
-    <Text>Entrar</Text>
-    </Link>
-
-    <Link href='/dentista'>
     <Text>Entrar</Text>
     </Link>
 

@@ -1,18 +1,17 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, StyleSheet } from 'react-native';
+import React, { useContext } from 'react';
+import { Link } from 'expo-router';
 
-const funcionario = () => {
+const Funcionario = () => {
   return (
     <View>
       <Text>funcionario</Text>
-    </View>
-    <View>
-      <Links><Text>Nota Fiscal</Text></Links>
-      <Links><Text>Cliente</Text></Links>
-      <Links><Text>Agenda</Text></Links>
-      <Links><Text>Suporte</Text></Links>
+      <Link><Text>Nota Fiscal</Text></Link>
+      <Link><Text>Cliente</Text></Link>
+      <Link><Text>Agenda</Text></Link>
+      <Link><Text>Suporte</Text></Link>
     </View>
   )
 }
 
-export default funcionario
+export default Funcionario
