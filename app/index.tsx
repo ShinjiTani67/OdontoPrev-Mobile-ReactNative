@@ -23,7 +23,7 @@ const Index = () => {
   return (
     <View style={styles.container}>
       <Card />
-      <Text style={styles.title}>Claim Nomore</Text>
+      <Text style={styles.claimlogo}>Claim</Text><Text style={styles.nomorelogo}>nomere</Text>
       <Text style={styles.subtitle}>Login</Text>
 
       <TextInput
@@ -63,16 +63,16 @@ const styles = StyleSheet.create({
     padding: 20,
     fontFamily: 'Jost',
   },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 10,
-    position: "absolute"
+
+  claimlogo:{
+    fontFamily: 'Jost',
+    color: '#020000',
   },
-  subtitle: {
-    fontSize: 18,
-    marginBottom: 20,
+  nomorelogo:{
+    fontFamily:'Inria Serif',
+    color: '#020000',
   },
+
   input: {
     width: '80%',
     padding: 10,
