@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TextInput} from 'react-native';
 import { Link, useRouter } from 'expo-router';
 import React from 'react';
+import Card from "";
 
 
 const Index = () => {
