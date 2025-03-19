@@ -9,7 +9,7 @@ const dentista = () => {
       <Text>Dentista</Text>
     </View>
     <View>
-    <Links><Text>Nota Fiscal</Text></Links>
+    <Links href><Text>Nota Fiscal</Text></Links>
     <Links><Text>Sinistro</Text></Links>
     <Links><Text>Falso Sinistro</Text></Links>
     <Links><Text>Dentistas Parceiros</Text></Links>
