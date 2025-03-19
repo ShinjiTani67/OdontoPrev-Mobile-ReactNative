@@ -43,25 +43,29 @@ const styles = StyleSheet.create({
   link: {
     color: '#FF8585',
     textDecorationLine: 'underline',
-    width: 0.85, 
+    width: 0.85,
     height: 0.2,
+    borderRadius: 10,
   },
   link2: {
     color: '#FBCD6B',
     textDecorationLine: 'underline',
-    width: 0.85, 
+    width: 0.85,
     height: 0.2,
+    borderRadius: 10,
   },
   link3: {
     color: '#8DBFF9',
     textDecorationLine: 'underline',
-    width: 0.85, 
+    width: 0.85,
     height: 0.2,
+    borderRadius: 10,
   },
   link4: {
     color: '#8CBD82',
     textDecorationLine: 'underline',
-    width: 0.85, 
+    width: 0.85,
     height: 0.2,
+    borderRadius: 10,
   },
 });
