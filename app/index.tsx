@@ -12,7 +12,6 @@ const Index = () => {
     if (email === 'usuario' && password === 'usuario') {
       console.log('Login success', email + " "+ password);
       router.push('/funcionario')
-      
     } else if (email === 'dentista' && password === 'dentista') {
       console.log('Login success', email + " "+ password);
       router.push('/dentista')
@@ -22,7 +21,8 @@ const Index = () => {
     }
 
 
-  return <View>
+  return <View style={styles.container}>
+    Card
     <Text>Claim Nomore</Text>
     <Text>Login</Text>
     <TextInput placeholder='Email'></TextInput>
@@ -39,11 +39,11 @@ const Index = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'D9D9D9',
     alignItems: 'center',
     justifyContent: 'center',
   },
   logo:{
-    
-  }
+
+  },
 });
