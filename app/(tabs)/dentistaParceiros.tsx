@@ -5,6 +5,7 @@ import Card from '../../components/Card';
 const DentistaParceiros = () => {
   return (
     <View>
+      <Card/>
       <Text>DentistaParceiros</Text>
     </View>
   )

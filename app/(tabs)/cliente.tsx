@@ -5,6 +5,7 @@ import Card from '../../components/Card';
 const Cliente = () => {
   return (
     <View>
+      <Card/>
       <Text>Cliente</Text>
     </View>
   )

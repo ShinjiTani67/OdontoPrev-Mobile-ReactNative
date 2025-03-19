@@ -7,6 +7,7 @@ const Dentista = () => {
 
   return (
     <View style={styles.container}>
+      <Card/>
       <Text style={styles.title}>Dentista</Text>
 
       <View>

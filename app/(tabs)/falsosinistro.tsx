@@ -5,6 +5,7 @@ import Card from '../../components/Card';
 const FalsoSinistro = () => {
   return (
     <View>
+      <Card/>
       <Text>FalsoSinistro</Text>
     </View>
   )

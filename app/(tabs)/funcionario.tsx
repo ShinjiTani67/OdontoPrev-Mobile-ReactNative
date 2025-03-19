@@ -1,10 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React, { useContext } from 'react';
 import { Link } from 'expo-router';
+import Card from '../../components/Card';
 
 const Funcionario = () => {
   return (
     <View style={styles.container}>
+      <Card/>
       <Text>Funcionario</Text>
       <Link href='/app/(tabs)/notafiscal.tsx'>
       <Text>Nota Fiscal</Text>
