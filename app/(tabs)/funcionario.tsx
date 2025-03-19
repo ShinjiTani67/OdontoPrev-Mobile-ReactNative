@@ -6,12 +6,12 @@ const funcionario = () => {
     <View>
       <Text>funcionario</Text>
     </View>
-      <View>
-        <Links><Text>Nota Fiscal</Text></Links>
-        <Links><Text>Cliente</Text></Links>
-        <Links><Text>Agenda</Text></Links>
-        <Links><Text>Suporte</Text></Links>
-      </View>
+    <View>
+      <Links><Text>Nota Fiscal</Text></Links>
+      <Links><Text>Cliente</Text></Links>
+      <Links><Text>Agenda</Text></Links>
+      <Links><Text>Suporte</Text></Links>
+    </View>
   )
 }
 
