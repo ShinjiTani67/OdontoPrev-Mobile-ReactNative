@@ -1,5 +1,7 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, StyleSheet } from 'react-native';
+import React, { useContext } from 'react';
+import { authContext } from '../context/authContext';
+import { Link } from 'expo-router';
 
 const dentista = () => {
   const {user} = useContext(authContext);
@@ -9,12 +11,18 @@ const dentista = () => {
       <Text>Dentista</Text>
     </View>
     <View>
-    <Links href><Text>Nota Fiscal</Text></Links>
-    <Links><Text>Sinistro</Text></Links>
-    <Links><Text>Falso Sinistro</Text></Links>
-    <Links><Text>Dentistas Parceiros</Text></Links>
+    <Link href="/app/(tabs)/notafiscal.tsx"><Text>Nota Fiscal</Text></Link>
+    <Link><Text>Sinistro</Text></Link>
+    <Link><Text>Falso Sinistro</Text></Link>
+    <Link><Text>Dentistas Parceiros</Text></Link>
     </View>
   );
 };
 
-export default dentista
+export default dentista;
+const StyleSheet.create({
+  container: {
+    color: 'blue',
+    textDecoration: 'underline',
+  }
+})
