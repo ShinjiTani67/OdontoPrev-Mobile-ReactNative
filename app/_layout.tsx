@@ -15,6 +15,16 @@ const RootLayout = () => {
   </SafeAreaView>;
 };
 
+return(
+  <ThemeProvider>
+    <Stack>
+      <Stack.Screen></Stack.Screen>
+      <Stack.Screen></Stack.Screen>
+      <Stack.Screen></Stack.Screen>
+    </Stack>
+  </ThemeProvider>
+)
+
 export default RootLayout;
 
 const styles = StyleSheet.create({
@@ -28,3 +38,4 @@ const styles = StyleSheet.create({
 
   }
 })
+

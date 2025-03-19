@@ -7,8 +7,8 @@ const Index = () => {
   return <View>
     <Text>Claim Nomore</Text>
     <Text>Login</Text>
-    <TextInput>Usuario</TextInput>
-    <TextInput>Senha</TextInput>
+    <TextInput placeholder='Email'></TextInput>
+    <TextInput placeholder='Senha' secureTextEntry></TextInput>
     <Link href='/funcionario'>
     <Text>Entrar</Text>
     </Link>
