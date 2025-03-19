@@ -4,19 +4,19 @@ import React, { createContext, PropsWithChildren } from 'react'
 type AuthContextType = {
     user: string | null;
 };
-const authContext = createContext<AuthContextType>({
+const AuthContext = createContext<AuthContextType>({
         user: null,
 });
 
 const AuthProvider = ({children}: PropsWithChildren) => {
-    const currentUser = {
+    const authContextValue = {
         user: "user",
     };
 
   return (
-    <authContext.Provider value={ currentUser }>
+    <AuthContext.Provider value={ authContextValue }>
         {children}
-    </authContext.Provider>
+    </AuthContext.Provider>
   );
 };
 
