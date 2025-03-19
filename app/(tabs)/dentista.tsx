@@ -6,6 +6,12 @@ const dentista = () => {
     <View>
       <Text>Dentista</Text>
     </View>
+    <View>
+    <Links><Text></Text></Links>
+    <Links><Text></Text></Links>
+    <Links><Text></Text></Links>
+    <Links><Text></Text></Links>
+    </View>
   )
 }
 
