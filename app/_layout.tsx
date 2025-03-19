@@ -18,7 +18,7 @@ const RootLayout = () => {
 return(
   <ThemeProvider>
     <Stack>
-      <Stack.Screen></Stack.Screen>
+      <Stack.Screen nome='index'></Stack.Screen>
       <Stack.Screen></Stack.Screen>
       <Stack.Screen></Stack.Screen>
     </Stack>
