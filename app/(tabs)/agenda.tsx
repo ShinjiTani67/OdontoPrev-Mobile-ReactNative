@@ -6,7 +6,7 @@ const Agenda = () => {
   return (
     <View>
       <Card2/>
-      <Text>Agenda</Text>
+      <Text style={styles.title}>Agenda</Text>
     </View>
   )
 }
@@ -19,9 +19,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    fontFamily: 'Jost'
   },
-  text: {
-    fontSize: 20,
-    color: 'black',
-  }
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    position: "absolute"
+  },
 })

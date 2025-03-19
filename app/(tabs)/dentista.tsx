@@ -35,7 +35,11 @@ export default Dentista;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'Jost'
   },
   title: {
     fontSize: 20,
