@@ -1,17 +1,17 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import Card2 from '../../components/Card2';
+import Card2 from '../components/Card2';
 
-const Cliente = () => {
+const Sinistro = () => {
   return (
     <View>
       <Card2/>
-      <Text>Cliente</Text>
+      <Text>Sinistro</Text>
     </View>
   )
 }
 
-export default Cliente;
+export default Sinistro;
 
 const styles = StyleSheet.create({
   container: {

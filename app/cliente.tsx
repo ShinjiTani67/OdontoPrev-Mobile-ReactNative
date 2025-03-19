@@ -1,17 +1,17 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import Card2 from '../../components/Card2';
+import Card2 from '../components/Card2';
 
-const NotaFiscal = () => {
+const Cliente = () => {
   return (
     <View>
       <Card2/>
-      <Text>NotaFiscal</Text>
+      <Text>Cliente</Text>
     </View>
   )
 }
 
-export default NotaFiscal;
+export default Cliente;
 
 const styles = StyleSheet.create({
   container: {

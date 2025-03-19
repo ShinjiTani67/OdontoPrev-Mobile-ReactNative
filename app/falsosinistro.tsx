@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import Card2 from '../../components/Card2';
+import Card2 from '../components/Card2';
 
 const FalsoSinistro = () => {
   return (

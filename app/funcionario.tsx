@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React, { useContext } from 'react';
 import { Link } from 'expo-router';
-import Card2 from '../../components/Card2';
+import Card2 from '../components/Card2';
 
 const Funcionario = () => {
   return (
