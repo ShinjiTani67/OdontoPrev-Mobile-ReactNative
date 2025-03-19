@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image} from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput} from 'react-native';
 import { Link } from 'expo-router';
 import React from 'react';
 
@@ -6,7 +6,10 @@ import React from 'react';
 const Index = () => {
   return <View>
     <Text>Claim Nomore</Text>
-    <View >
+    <Text>Login</Text>
+    <TextInput>Usuario</TextInput>
+    <TextInput>Senha</TextInput>
+    <View>
     <Text>Entrar</Text>
     </View>
     <Text>mexer na senha</Text>
