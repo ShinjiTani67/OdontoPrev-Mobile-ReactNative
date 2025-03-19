@@ -7,10 +7,10 @@ const funcionario = () => {
       <Text>funcionario</Text>
     </View>
       <View>
-        <Links><Text></Text></Links>
-        <Links><Text></Text></Links>
-        <Links><Text></Text></Links>
-        <Links><Text></Text></Links>
+        <Links><Text>Nota Fiscal</Text></Links>
+        <Links><Text>Cliente</Text></Links>
+        <Links><Text>Agenda</Text></Links>
+        <Links><Text>Suporte</Text></Links>
       </View>
   )
 }
