@@ -3,26 +3,31 @@ import React, { useContext } from 'react';
 import { Link } from 'expo-router';
 
 const Dentista = () => {
-  const { user } = useContext(authContext);
 
   return (
     <View style={styles.container}>
-      <Text>Dentista</Text>
-    
-    <View>
-    <Link href="/app/(tabs)/notafiscal"><Text>Nota Fiscal</Text></Link>
+      <Text style={styles.title}>Dentista</Text>
 
-    <Link href="/app/(tabs)/sinistro"><Text>Sinistro</Text></Link>
+      <View>
+        <Link href="/app/(tabs)/notafiscal">
+          <Text style={styles.link}>Nota Fiscal</Text>
+        </Link>
 
-    <Link href='/app/(tabs)/falsosinistro'><Text>Falso Sinistro</Text></Link>
+        <Link href="/app/(tabs)/sinistro">
+          <Text style={styles.link}>Sinistro</Text>
+        </Link>
 
-    <Link href='/app/(tabs)/dentistaParceiros'><Text>Dentistas Parceiros</Text></Link>
+        <Link href="/app/(tabs)/falsosinistro">
+          <Text style={styles.link}>Falso Sinistro</Text>
+        </Link>
 
+        <Link href="/app/(tabs)/dentistaParceiros">
+          <Text style={styles.link}>Dentistas Parceiros</Text>
+        </Link>
+      </View>
     </View>
-
-    )
-  }
-}
+  );
+};
 
 export default Dentista;
 
@@ -35,4 +40,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
   },
-},
+  link: {
+    color: 'blue',
+    textDecorationLine: 'underline',
+    marginTop: 10,
+  },
+});
