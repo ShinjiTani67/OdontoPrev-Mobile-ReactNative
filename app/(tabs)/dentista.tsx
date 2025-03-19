@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React, { useContext } from 'react';
 import { Link } from 'expo-router';
+import Card from '../../components/Card';
 
 const Dentista = () => {
 
