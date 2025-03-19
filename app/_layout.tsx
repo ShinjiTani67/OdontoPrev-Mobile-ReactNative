@@ -13,13 +13,6 @@ const RootLayout = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <TextInput
-        style={styles.searchInput}
-        placeholder="Search..."
-        value={searchQuery}
-        onChangeText={setSearchQuery}
-      />
-      <Slot />
     </SafeAreaView>
   );
 };
