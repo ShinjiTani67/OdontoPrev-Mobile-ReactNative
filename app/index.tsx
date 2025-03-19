@@ -5,9 +5,7 @@ import React from 'react';
 
 const Index = () => {
   return <View>
-    <Text></Text>
-    <Text></Text>
-    <Text></Text>
+    <Text>Claim Nomore</Text>
     <View >
     <Text>Entrar</Text>
     </View>
