@@ -12,9 +12,11 @@ const Index = () => {
     if (email === 'usuario' && password === 'usuario') {
       console.log('Login success:', email, password);
       router.push('/funcionario');
+
     } else if (email === 'dentista' && password === 'dentista') {
       console.log('Login success:', email, password);
       router.push('/dentista');
+
     } else {
       console.log('Login failed');
     }
@@ -23,7 +25,7 @@ const Index = () => {
   return (
     <View style={styles.container}>
       <Card />
-      <Text style={styles.claimlogo}>Claim</Text><Text style={styles.nomorelogo}>nomere</Text>
+      <Text style={styles.claimlogo}>Claim</Text><Text style={styles.nomorelogo}>nomore</Text>
       <Text style={styles.text}>login</Text>
 
       <TextInput
@@ -44,10 +46,7 @@ const Index = () => {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
-
-      <Link href="/funcionario">
-        <Text style={styles.link}>Entrar como funcionário</Text>
-      </Link>
+      
     </View>
   );
 };
