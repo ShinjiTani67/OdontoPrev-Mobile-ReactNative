@@ -9,10 +9,12 @@ const Index = () => {
     <Text>Login</Text>
     <TextInput>Usuario</TextInput>
     <TextInput>Senha</TextInput>
-    <View>
+    <Link href='/funcionario'>
     <Text>Entrar</Text>
-    </View>
-    <Text>mexer na senha</Text>
+    </Link>
+    <Link href='/dentista'>
+    <Text>Entrar</Text>
+    </Link>
   </View>
 }
 
