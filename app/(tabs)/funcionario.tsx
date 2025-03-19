@@ -8,17 +8,16 @@ const Funcionario = () => {
     <View style={styles.container}>
       <Card2/>
       <Text>Funcionario</Text>
-      <Link href='/app/(tabs)/notafiscal.tsx'>
+      <Link href='/app/(tabs)/notafiscal.tsx' style={styles.link2}>
       <Text>Nota Fiscal</Text>
       </Link>
-
-      <Link href='/app/(tabs)/cliente.tsx'>
+      <Link href='/app/(tabs)/cliente.tsx' style={styles.link2}>
       <Text>Cliente</Text>
       </Link>
-      <Link href='/app/(tabs)/agenda.tsx'>
+      <Link href='/app/(tabs)/agenda.tsx'style={styles.link2}>
       <Text>Agenda</Text>
       </Link>
-      <Link href='/app/(tabs)/suporte.tsx'>
+      <Link href='/app/(tabs)/suporte.tsx'style={styles.link2}>
       <Text>Suporte</Text>
       </Link>
 
@@ -42,8 +41,27 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   link: {
-    color: 'blue',
+    color: '#FF8585',
     textDecorationLine: 'underline',
-    marginTop: 10,
+    width: 0.85, 
+    height: 0.2,
+  },
+  link2: {
+    color: '#FBCD6B',
+    textDecorationLine: 'underline',
+    width: 0.85, 
+    height: 0.2,
+  },
+  link3: {
+    color: '#8DBFF9',
+    textDecorationLine: 'underline',
+    width: 0.85, 
+    height: 0.2,
+  },
+  link4: {
+    color: '#8CBD82',
+    textDecorationLine: 'underline',
+    width: 0.85, 
+    height: 0.2,
   },
 });

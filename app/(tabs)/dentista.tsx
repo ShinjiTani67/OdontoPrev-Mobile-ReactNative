@@ -11,20 +11,20 @@ const Dentista = () => {
       <Text style={styles.title}>Dentista</Text>
 
       <View>
-        <Link href="/app/(tabs)/notafiscal">
-          <Text style={styles.link}>Nota Fiscal</Text>
+        <Link href="/app/(tabs)/notafiscal" style={styles.link}>
+          <Text>Nota Fiscal</Text>
         </Link>
 
-        <Link href="/app/(tabs)/sinistro">
-          <Text style={styles.link}>Sinistro</Text>
+        <Link href="/app/(tabs)/sinistro" style={styles.link2}>
+          <Text>Sinistro</Text>
         </Link>
 
-        <Link href="/app/(tabs)/falsosinistro">
-          <Text style={styles.link}>Falso Sinistro</Text>
+        <Link href="/app/(tabs)/falsosinistro" style={styles.link2}>
+          <Text>Falso Sinistro</Text>
         </Link>
 
-        <Link href="/app/(tabs)/dentistaParceiros">
-          <Text style={styles.link}>Dentistas Parceiros</Text>
+        <Link href="/app/(tabs)/dentistaParceiros" style={styles.link2}>
+          <Text>Dentistas Parceiros</Text>
         </Link>
       </View>
     </View>
@@ -47,8 +47,27 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   link: {
-    color: 'blue',
+    color: '#FF8585',
     textDecorationLine: 'underline',
-    marginTop: 10,
+    width: 0.85, 
+    height: 0.2,
+  },
+  link2: {
+    color: '#FBCD6B',
+    textDecorationLine: 'underline',
+    width: 0.85, 
+    height: 0.2,
+  },
+  link3: {
+    color: '#8DBFF9',
+    textDecorationLine: 'underline',
+    width: 0.85, 
+    height: 0.2,
+  },
+  link4: {
+    color: '#8CBD82',
+    textDecorationLine: 'underline',
+    width: 0.85, 
+    height: 0.2,
   },
 });
