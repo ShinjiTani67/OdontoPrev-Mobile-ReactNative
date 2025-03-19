@@ -1,13 +1,13 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React, { useContext } from 'react';
 import { Link } from 'expo-router';
-import Card from '../../components/Card';
+import Card2 from '../../components/Card2';
 
 const Dentista = () => {
 
   return (
     <View style={styles.container}>
-      <Card/>
+      <Card2/>
       <Text style={styles.title}>Dentista</Text>
 
       <View>

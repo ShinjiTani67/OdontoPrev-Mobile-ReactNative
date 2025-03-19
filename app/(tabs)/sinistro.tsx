@@ -1,11 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import Card from '../../components/Card';
+import Card2 from '../../components/Card2';
 
 const Sinistro = () => {
   return (
     <View>
-      <Card/>
+      <Card2/>
       <Text>Sinistro</Text>
     </View>
   )
