@@ -31,9 +31,16 @@ function RootLayoutNav() {
 
   return (
     <Stack screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="index" />
-      <Stack.Screen name="signin" />
-      <Stack.Screen name="dashboard" />
+      <Stack.Screen name='index'></Stack.Screen>
+      <Stack.Screen name='agenda'></Stack.Screen>
+      <Stack.Screen name='cliente'></Stack.Screen>
+      <Stack.Screen name='dentista'></Stack.Screen>
+      <Stack.Screen name='dentistaparceiros'></Stack.Screen>
+      <Stack.Screen name='falsosinistro'></Stack.Screen>
+      <Stack.Screen name='funcionario'></Stack.Screen>
+      <Stack.Screen name='nofafiscal'></Stack.Screen>
+      <Stack.Screen name='sinistro'></Stack.Screen>
+      <Stack.Screen name='suporte'></Stack.Screen>
     </Stack>
   );
 }
