@@ -1,14 +1,23 @@
 import { View, Text } from 'react-native'
-import React, { createContext } from 'react'
+import React, { createContext, PropsWithChildren } from 'react'
 
-const authContext = createContext();
+type AuthContextType = {
+    user: string | null;
+};
+const authContext = createContext<AuthContextType>({
+        user: null,
+});
 
-const AuthProvider = () => {
+const AuthProvider = ({children}: PropsWithChildren) => {
+    const currentUser = {
+        user: "user",
+    };
+
   return (
-    <View>
-      <Text>AuthProvider</Text>
-    </View>
-  )
-}
+    <authContext.Provider value={ currentUser }>
+        {children}
+    </authContext.Provider>
+  );
+};
 
-export default AuthProvider
+export default AuthProvider;

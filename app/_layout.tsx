@@ -15,27 +15,20 @@ const RootLayout = () => {
   </SafeAreaView>;
 };
 
-return(
-  <ThemeProvider>
-    <Stack>
-      <Stack.Screen nome='index'></Stack.Screen>
-      <Stack.Screen></Stack.Screen>
-      <Stack.Screen></Stack.Screen>
-    </Stack>
-  </ThemeProvider>
-)
 
 export default RootLayout;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  logo: {
+function RootLayoutNav() {
+  const colorScheme = useColorScheme();
 
-  }
-})
+  return(
+    <AuthProvider>
+      <Stack>
+        <Stack.Screen></Stack.Screen>
+        <Stack.Screen></Stack.Screen>
+        <Stack.Screen></Stack.Screen>
+      </Stack>
+    </AuthProvider>
+  )
+}
 

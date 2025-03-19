@@ -2,6 +2,8 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 const dentista = () => {
+  const {user} = useContext(authContext);
+
   return (
     <View>
       <Text>Dentista</Text>
@@ -12,7 +14,7 @@ const dentista = () => {
     <Links><Text>Falso Sinistro</Text></Links>
     <Links><Text>Dentistas Parceiros</Text></Links>
     </View>
-  )
-}
+  );
+};
 
 export default dentista
