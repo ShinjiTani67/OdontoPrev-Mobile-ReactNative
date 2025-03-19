@@ -7,10 +7,10 @@ const dentista = () => {
       <Text>Dentista</Text>
     </View>
     <View>
-    <Links><Text></Text></Links>
-    <Links><Text></Text></Links>
-    <Links><Text></Text></Links>
-    <Links><Text></Text></Links>
+    <Links><Text>Nota Fiscal</Text></Links>
+    <Links><Text>Sinistro</Text></Links>
+    <Links><Text>Falso Sinistro</Text></Links>
+    <Links><Text>Dentistas Parceiros</Text></Links>
     </View>
   )
 }
