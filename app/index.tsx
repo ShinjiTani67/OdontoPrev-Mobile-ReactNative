@@ -24,13 +24,13 @@ const Index = () => {
 
   return (
     <View style={styles.container}>
-      <Card />
+      <Card/>
       <Text style={styles.claimlogo}>Claim</Text><Text style={styles.nomorelogo}>nomore</Text>
       <Text style={styles.text}>login</Text>
 
       <TextInput
         style={styles.input}
-        placeholder="Email"
+        placeholder="Usuário"
         value={email}
         onChangeText={setEmail}
       />
@@ -46,7 +46,7 @@ const Index = () => {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
-      
+
     </View>
   );
 };
@@ -55,11 +55,11 @@ export default Index;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#D9D9D9',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
+    flex: 1.5,
+    backgroundColor: "#D9D9D9",
+    alignItems: "center",
+    justifyContent: "flex-start", // Move tudo para cima
+    paddingTop: 0,
     fontFamily: 'Jost',
   },
 
@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#5595F5',
     marginBottom: 10,
   },
+  
   button: {
     backgroundColor: '#3CC351',
     padding: 10,

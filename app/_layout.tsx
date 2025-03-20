@@ -13,6 +13,7 @@ const RootLayout = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
+      <Slot />
     </SafeAreaView>
   );
 };
