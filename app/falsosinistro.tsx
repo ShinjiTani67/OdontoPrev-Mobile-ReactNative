@@ -8,9 +8,9 @@ const FalsoSinistro = () => {
       <Card2/>
       <Text>FalsoSinistro</Text>
       <Image
-              source={{ uri: 'https://i.pinimg.com/736x/e2/bc/2b/e2bc2b005d593253f62a4727d3da5d4f.jpg' }}
-              style={styles.image}
-            />
+        source={{ uri: 'https://i.pinimg.com/736x/e2/bc/2b/e2bc2b005d593253f62a4727d3da5d4f.jpg' }}
+        style={styles.image}
+        />
     </View>
   )
 }

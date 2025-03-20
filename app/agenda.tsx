@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import Card2 from '../components/Card2';
 
@@ -7,6 +7,11 @@ const Agenda = () => {
     <View>
       <Card2/>
       <Text style={styles.title}>Agenda</Text>
+      <Image
+              source={{ uri: 'https://img.freepik.com/vetores-gratis/modelo-de-calendario-2023-desenhado-a-mao-em-espanhol_23-2149689851.jpg' }}
+              style={styles.image}
+              />
+     
     </View>
   )
 }
@@ -27,4 +32,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     position: "absolute"
   },
+  image:{
+    width: 200,
+    height: 200,
+    borderRadius: 100
+  }
 })
