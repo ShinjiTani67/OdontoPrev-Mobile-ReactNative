@@ -27,9 +27,9 @@ const Index = () => {
         <Card/>
         <Text style={styles.claimlogo}>Claim</Text>
         <Text style={styles.nomorelogo}>nomore</Text>
-        <Text style={styles.text}>login</Text>
-
+      
         <View style={styles.container2}>
+        <Text style={styles.text}>login</Text>
         <TextInput style={styles.input} placeholder="Usuário" value={email} onChangeText={setEmail} />
         <TextInput style={styles.input} placeholder="Senha" secureTextEntry value={password} onChangeText={setPassword} />
           <TouchableOpacity style={styles.button} onPress={handleLogin}>
@@ -44,7 +44,7 @@ export default Index;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1.5,
+    flex: 2,
     backgroundColor: "#D9D9D9",
     alignItems: "center",
     justifyContent: "flex-start", // Move tudo para cima
@@ -56,7 +56,9 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     alignItems: "center", 
-    marginBottom: 20,
+    marginBottom: 70,
+    justifyContent: "flex-end",
+    paddingTop: 70,
   },
 
   text: {
