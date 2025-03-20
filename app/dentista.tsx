@@ -10,7 +10,7 @@ const Dentista = () => {
       <Card2/>
       <Text style={styles.title}>Dentista</Text>
 
-      <View>
+      <View style={styles.container}>
         <Link href="/app/(tabs)/notafiscal" style={styles.link}>
           <Text>Nota Fiscal</Text>
         </Link>

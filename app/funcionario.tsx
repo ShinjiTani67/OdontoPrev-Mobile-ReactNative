@@ -1,29 +1,40 @@
-import { View, Text, StyleSheet } from 'react-native';
-import React, { useContext } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Link } from 'expo-router';
+import React from 'react';
 import Card2 from '../components/Card2';
 
 const Funcionario = () => {
   return (
     <View style={styles.container}>
-      <Card2/>
-      <Text>Funcionario</Text>
-      <Link href='/app/(tabs)/notafiscal.tsx' style={styles.link2}>
-      <Text>Nota Fiscal</Text>
-      </Link>
-      <Link href='/app/(tabs)/cliente.tsx' style={styles.link2}>
-      <Text>Cliente</Text>
-      </Link>
-      <Link href='/app/(tabs)/agenda.tsx'style={styles.link2}>
-      <Text>Agenda</Text>
-      </Link>
-      <Link href='/app/(tabs)/suporte.tsx'style={styles.link2}>
-      <Text>Suporte</Text>
-      </Link>
+      <Card2 />
+      <Text style={styles.title}>Funcionário</Text>
 
+      <TouchableOpacity style={styles.linkButtonRed}>
+        <Link href="/notafiscal" style={styles.linkText}>
+          Nota Fiscal
+        </Link>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.linkButtonYellow}>
+        <Link href="/cliente" style={styles.linkText}>
+          Cliente
+        </Link>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.linkButtonBlue}>
+        <Link href="/agenda" style={styles.linkText}>
+          Agenda
+        </Link>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.linkButtonGreen}>
+        <Link href="/suporte" style={styles.linkText}>
+          Suporte
+        </Link>
+      </TouchableOpacity>
     </View>
-  )
-}
+  );
+};
 
 export default Funcionario;
 
@@ -33,39 +44,54 @@ const styles = StyleSheet.create({
     backgroundColor: '#D9D9D9',
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily: 'Jost'
+    fontFamily: 'Jost',
   },
   title: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  
+  linkButtonRed: {
+    backgroundColor: '#FF8585', 
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    width: '80%',
+    alignItems: 'center',
     marginBottom: 10,
   },
-  link: {
-    color: '#FF8585',
-    textDecorationLine: 'underline',
-    width: 0.85,
-    height: 0.2,
-    borderRadius: 10,
+  linkButtonYellow: {
+    backgroundColor: '#FBCD6B', 
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    width: '80%',
+    alignItems: 'center',
+    marginBottom: 10,
   },
-  link2: {
-    color: '#FBCD6B',
-    textDecorationLine: 'underline',
-    width: 0.85,
-    height: 0.2,
-    borderRadius: 10,
+  linkButtonBlue: {
+    backgroundColor: '#8DBFF9', 
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    width: '80%',
+    alignItems: 'center',
+    marginBottom: 10,
   },
-  link3: {
-    color: '#8DBFF9',
-    textDecorationLine: 'underline',
-    width: 0.85,
-    height: 0.2,
-    borderRadius: 10,
+  linkButtonGreen: {
+    backgroundColor: '#8CBD82',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    width: '80%',
+    alignItems: 'center',
+    marginBottom: 10,
   },
-  link4: {
-    color: '#8CBD82',
-    textDecorationLine: 'underline',
-    width: 0.85,
-    height: 0.2,
-    borderRadius: 10,
+  
+  linkText: {
+    color: '#FFFFFF',
+    fontSize: 18,
+    fontWeight: 'bold',
+    textDecorationLine: 'none',
   },
 });
