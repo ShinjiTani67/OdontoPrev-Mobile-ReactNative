@@ -23,31 +23,20 @@ const Index = () => {
   }
 
   return (
-    <View style={styles.container}>
-      <Card/>
-      <Text style={styles.claimlogo}>Claim</Text><Text style={styles.nomorelogo}>nomore</Text>
-      <Text style={styles.text}>login</Text>
+      <View style={styles.container}>
+        <Card/>
+        <Text style={styles.claimlogo}>Claim</Text>
+        <Text style={styles.nomorelogo}>nomore</Text>
+        <Text style={styles.text}>login</Text>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Usuário"
-        value={email}
-        onChangeText={setEmail}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="Senha"
-        secureTextEntry
-        value={password}
-        onChangeText={setPassword}
-      />
-
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttonText}>Entrar</Text>
-      </TouchableOpacity>
-
-    </View>
+        <View style={styles.container2}>
+        <TextInput style={styles.input} placeholder="Usuário" value={email} onChangeText={setEmail} />
+        <TextInput style={styles.input} placeholder="Senha" secureTextEntry value={password} onChangeText={setPassword} />
+          <TouchableOpacity style={styles.button} onPress={handleLogin}>
+            <Text style={styles.buttonText}>Entrar</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
   );
 };
 
@@ -61,6 +50,13 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start", // Move tudo para cima
     paddingTop: 0,
     fontFamily: 'Jost',
+  },
+
+  container2: {
+    flex: 1,
+    width: "100%",
+    alignItems: "center", 
+    marginBottom: 20,
   },
 
   text: {
