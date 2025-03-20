@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
   
   linkButtonRed: {
     backgroundColor: '#FF8585', 
+    paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 8,
     width: '80%',
