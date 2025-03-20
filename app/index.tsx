@@ -9,11 +9,11 @@ const Index = () => {
   const router = useRouter();
 
   function handleLogin() {
-    if (email === 'usuario' && password === 'usuario') {
+    if (email === 'Usuario' && password === 'Usuario') {
       console.log('Login success:', email, password);
       router.push('/funcionario');
 
-    } else if (email === 'dentista' && password === 'dentista') {
+    } else if (email === 'Dentista' && password === 'Dentista') {
       console.log('Login success:', email, password);
       router.push('/dentista');
 
