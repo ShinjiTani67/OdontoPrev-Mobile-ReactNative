@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     flex: 2,
     backgroundColor: "#D9D9D9",
     alignItems: "center",
-    justifyContent: "flex-start", // Move tudo para cima
+    justifyContent: "flex-start", 
     paddingTop: 0,
     fontFamily: 'Jost',
   },

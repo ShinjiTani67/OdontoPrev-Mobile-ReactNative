@@ -9,7 +9,7 @@ const Dentista = () => {
       <Card2 title='dentista'/>
       
 
-      <View style={styles.containerLinks}>
+      <View style={styles.container2}>
         <TouchableOpacity style={styles.linkButtonRed}>
           <Link href="/app/notafiscal.tsx" style={styles.linkText}>
             Nota Fiscal
@@ -42,11 +42,21 @@ export default Dentista;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#D9D9D9',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 2,
+    backgroundColor: "#D9D9D9",
+    alignItems: "center",
+    justifyContent: "flex-start", 
+    paddingTop: 0,
     fontFamily: 'Jost',
+  },
+
+  container2: {
+    flex: 1,
+    width: "100%",
+    alignItems: "center", 
+    marginBottom: 70,
+    justifyContent: "flex-end",
+    paddingTop: 70,
   },
   title: {
     fontSize: 24,
@@ -54,11 +64,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   
-  containerLinks: {
-    width: '100%',
-    alignItems: 'center',
-  },
- 
   linkButtonRed: {
     backgroundColor: '#FF8585',
     paddingVertical: 12,
