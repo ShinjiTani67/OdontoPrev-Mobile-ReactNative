@@ -18,10 +18,10 @@ a verificação será feita pela postagem de Notas fiscais.
 O sistema terá diferentes funcionalidades para cada tipo de login. Os dentitas podem realizar funções admistrativas do seu tempo como verificar agendamentos e 
 as contas de usuários servem para exclusivamente para a verificação de sinistros 
 
-
 - Pitch
 https://www.youtube.com/watch?v=O5D_YSpjp6Y
 
 ## Instalação
-- Clone o Repositório 
+- Clone o Repositório
+- https://github.com/ShinjiTani67/OdontoPrev-Mobile-ReactNative.git
 
