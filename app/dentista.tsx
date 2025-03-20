@@ -11,25 +11,25 @@ const Dentista = () => {
 
       <View style={styles.containerLinks}>
         <TouchableOpacity style={styles.linkButtonRed}>
-          <Link href="/app/(tabs)/notafiscal" style={styles.linkText}>
+          <Link href="/app/notafiscal.tsx" style={styles.linkText}>
             Nota Fiscal
           </Link>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.linkButtonYellow}>
-          <Link href="/app/(tabs)/sinistro" style={styles.linkText}>
+          <Link href="/app/sinistro.tsx" style={styles.linkText}>
             Sinistro
           </Link>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.linkButtonBlue}>
-          <Link href="/app/(tabs)/falsosinistro" style={styles.linkText}>
+          <Link href="/app/falsosinistro" style={styles.linkText}>
             Falso Sinistro
           </Link>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.linkButtonGreen}>
-          <Link href="/app/(tabs)/dentistaParceiros" style={styles.linkText}>
+          <Link href="/app/dentistaparceiros.tsx" style={styles.linkText}>
             Dentistas Parceiros
           </Link>
         </TouchableOpacity>
