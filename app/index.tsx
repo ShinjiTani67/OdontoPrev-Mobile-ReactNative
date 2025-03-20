@@ -25,9 +25,6 @@ const Index = () => {
   return (
       <View style={styles.container}>
         <Card/>
-        <Text style={styles.claimlogo}>Claim</Text>
-        <Text style={styles.nomorelogo}>nomore</Text>
-      
         <View style={styles.container2}>
         <Text style={styles.text}>login</Text>
         <TextInput style={styles.input} placeholder="Usuário" value={email} onChangeText={setEmail} />
