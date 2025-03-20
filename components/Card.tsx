@@ -4,8 +4,10 @@ import { View, Text, StyleSheet } from "react-native";
 const Card = () => {
   return (
     <View style={styles.card}>
-      <Text style={styles.claim}>Claim</Text>
-      <Text style={styles.nomore}>nomore</Text>
+      <View style={styles.textContainer}>
+        <Text style={styles.claim}>Claim</Text>
+        <Text style={styles.nomore}>nomore</Text>
+      </View>
     </View>
   );
 };
@@ -15,25 +17,29 @@ export default Card;
 const styles = StyleSheet.create({
   card: {
     backgroundColor: "#67D76E",
-    padding: 20,
-    borderRadius: 10,
+    padding: 0,
     borderBottomLeftRadius: 60,
     borderBottomRightRadius: 60,
-    width: "100%", 
-    height: "25%", 
-    alignItems: "flex-start", 
-    justifyContent: "flex-end", 
-    paddingLeft: 20, 
-    paddingBottom: 20, 
+    width: "100%",
+    height: "25%",
+    position: "relative", 
+  },
+  textContainer: {
+    position: "absolute",
+    bottom: 10, 
+    left: 15, 
+    flexDirection: "row", 
+    alignItems: "center", 
   },
   claim: {
-    fontSize: 24,
+    fontFamily: "Jost",
+    fontSize: 28,
     color: "#020000",
-    fontFamily: "Inria Serif",
+    marginRight: 5, 
   },
   nomore: {
-    fontSize: 20,
+    fontFamily: "InriaSerif",
+    fontSize: 28,
     color: "#020000",
-    fontFamily: "Jost",
   },
 });

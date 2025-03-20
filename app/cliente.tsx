@@ -5,8 +5,7 @@ import Card2 from '../components/Card2';
 const Cliente = () => {
   return (
     <View>
-      <Card2/>
-      <Text>Cliente</Text>
+      <Card2 title='cliente'/>
     </View>
   )
 }

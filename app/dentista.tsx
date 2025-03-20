@@ -6,8 +6,8 @@ import Card2 from '../components/Card2';
 const Dentista = () => {
   return (
     <View style={styles.container}>
-      <Card2 />
-      <Text style={styles.title}>Dentista</Text>
+      <Card2 title='dentista'/>
+      
 
       <View style={styles.containerLinks}>
         <TouchableOpacity style={styles.linkButtonRed}>

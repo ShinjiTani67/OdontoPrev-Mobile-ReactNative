@@ -5,8 +5,7 @@ import Card2 from '../components/Card2';
 const NotaFiscal = () => {
   return (
     <View>
-      <Card2/>
-      <Text>NotaFiscal</Text>
+      <Card2 title='nota fiscal'/>
     </View>
   )
 }

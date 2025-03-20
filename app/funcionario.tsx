@@ -6,8 +6,7 @@ import Card2 from '../components/Card2';
 const Funcionario = () => {
   return (
     <View style={styles.container}>
-      <Card2 />
-      <Text style={styles.title}>Funcionário</Text>
+      <Card2 title='funcionario'/>
 
       <TouchableOpacity style={styles.linkButtonRed}>
         <Link href="/notafiscal" style={styles.linkText}>

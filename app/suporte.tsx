@@ -5,8 +5,7 @@ import Card2 from '../components/Card2';
 const Suporte = () => {
   return (
     <View>
-      <Card2/>
-      <Text>Suporte</Text>
+      <Card2 title='suporte'/>
     </View>
   )
 }

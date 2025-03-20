@@ -5,8 +5,8 @@ import Card2 from '../components/Card2';
 const DentistaParceiros = () => {
   return (
     <View>
-      <Card2/>
-      <Text>DentistaParceiros</Text>
+      <Card2 title='dentistas parceiros'/>
+      
     </View>
   )
 }

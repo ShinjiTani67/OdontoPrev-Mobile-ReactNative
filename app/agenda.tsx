@@ -5,8 +5,7 @@ import Card2 from '../components/Card2';
 const Agenda = () => {
   return (
     <View>
-      <Card2/>
-      <Text style={styles.title}>Agenda</Text>
+      <Card2 title='agenda'/>
       <Image
               source={{ uri: 'https://img.freepik.com/vetores-gratis/modelo-de-calendario-2023-desenhado-a-mao-em-espanhol_23-2149689851.jpg' }}
               style={styles.image}
