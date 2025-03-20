@@ -1,31 +1,38 @@
-import { View, Text, StyleSheet } from 'react-native';
-import React, { useContext } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import React from 'react';
 import { Link } from 'expo-router';
 import Card2 from '../components/Card2';
 
 const Dentista = () => {
-
   return (
     <View style={styles.container}>
-      <Card2/>
+      <Card2 />
       <Text style={styles.title}>Dentista</Text>
 
-      <View style={styles.container}>
-        <Link href="/app/(tabs)/notafiscal" style={styles.link}>
-          <Text>Nota Fiscal</Text>
-        </Link>
+      <View style={styles.containerLinks}>
+        <TouchableOpacity style={styles.linkButtonRed}>
+          <Link href="/app/(tabs)/notafiscal" style={styles.linkText}>
+            Nota Fiscal
+          </Link>
+        </TouchableOpacity>
 
-        <Link href="/app/(tabs)/sinistro" style={styles.link2}>
-          <Text>Sinistro</Text>
-        </Link>
+        <TouchableOpacity style={styles.linkButtonYellow}>
+          <Link href="/app/(tabs)/sinistro" style={styles.linkText}>
+            Sinistro
+          </Link>
+        </TouchableOpacity>
 
-        <Link href="/app/(tabs)/falsosinistro" style={styles.link2}>
-          <Text>Falso Sinistro</Text>
-        </Link>
+        <TouchableOpacity style={styles.linkButtonBlue}>
+          <Link href="/app/(tabs)/falsosinistro" style={styles.linkText}>
+            Falso Sinistro
+          </Link>
+        </TouchableOpacity>
 
-        <Link href="/app/(tabs)/dentistaParceiros" style={styles.link2}>
-          <Text>Dentistas Parceiros</Text>
-        </Link>
+        <TouchableOpacity style={styles.linkButtonGreen}>
+          <Link href="/app/(tabs)/dentistaParceiros" style={styles.linkText}>
+            Dentistas Parceiros
+          </Link>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -39,39 +46,60 @@ const styles = StyleSheet.create({
     backgroundColor: '#D9D9D9',
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily: 'Jost'
+    fontFamily: 'Jost',
   },
   title: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  
+  containerLinks: {
+    width: '100%',
+    alignItems: 'center',
+  },
+ 
+  linkButtonRed: {
+    backgroundColor: '#FF8585',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    width: '80%',
+    alignItems: 'center',
     marginBottom: 10,
   },
-  link: {
-    color: '#FF8585',
-    textDecorationLine: 'underline',
-    width: 0.85,
-    height: 0.2,
-    borderRadius: 10,
+  linkButtonYellow: {
+    backgroundColor: '#FBCD6B', 
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    width: '80%',
+    alignItems: 'center',
+    marginBottom: 10,
   },
-  link2: {
-    color: '#FBCD6B',
-    textDecorationLine: 'underline',
-    width: 0.85,
-    height: 0.2,
-    borderRadius: 10,
+  linkButtonBlue: {
+    backgroundColor: '#8DBFF9',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    width: '80%',
+    alignItems: 'center',
+    marginBottom: 10,
   },
-  link3: {
-    color: '#8DBFF9',
-    textDecorationLine: 'underline',
-    width: 0.85,
-    height: 0.2,
-    borderRadius: 10,
+  linkButtonGreen: {
+    backgroundColor: '#8CBD82', 
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    width: '80%',
+    alignItems: 'center',
+    marginBottom: 10,
   },
-  link4: {
-    color: '#8CBD82',
-    textDecorationLine: 'underline',
-    width: 0.85,
-    height: 0.2,
-    borderRadius: 10,
+  
+  linkText: {
+    color: '#FFFFFF',
+    fontSize: 18,
+    fontWeight: 'bold',
+    textDecorationLine: 'none',
   },
 });
