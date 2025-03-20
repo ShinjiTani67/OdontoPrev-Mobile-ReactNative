@@ -1,43 +1,27 @@
-# 🚀 Desafio: Implementando UI do Figma com Expo Router
+# Claim Nomore  
 
-## 📌 Objetivo
+## Índice 
 
-Nesta atividade, você deverá utilizar **React Native** com **Expo Router** para implementar a interface do aplicativo baseada no design disponível no **Figma**.
+- [Integrantes]
+- [Descrição]   
+- [Instalação]   
 
-🔗 Link do design no Figma:  
-[Formula 1 App Redesign Challenge](https://www.figma.com/design/ddO51r5cWKZ7PHYu2whKgl/Formula-1-App-Redesign-Challenge-(Community)?m=auto&is-community-duplicate=1&fuid=1119325867239317570)
+## Integrantes  
+- Carlos Eduardo RM553461
+- Fernando Tanigushi RM553587
+- João Vitor Valaitis Paulo RM553972
 
-## 🎨 Conteúdo do Layout no Figma
 
-O design proposto no Figma apresenta uma interface moderna e intuitiva para um aplicativo de Fórmula 1. As principais telas e componentes incluem:
+## Descrição
+O projeto planeja fazer um sistema de verificação de sinistro. Com dois tipos de contas, uma para funcionários da empresa de odonto e outra para dentistas.
+a verificação será feita pela postagem de Notas fiscais.
+O sistema terá diferentes funcionalidades para cada tipo de login. Os dentitas podem realizar funções admistrativas do seu tempo como verificar agendamentos e 
+as contas de usuários servem para exclusivamente para a verificação de sinistros 
 
-- **Tela Inicial**: Exibe as últimas notícias, resultados de corridas e informações sobre pilotos e equipes.
-- **Detalhes da Corrida**: Informações detalhadas sobre cada corrida, incluindo data, local, resultados e destaques.
-- **Perfil do Piloto**: Dados completos sobre cada piloto, estatísticas e histórico de desempenho.
-- **Classificação**: Tabela de classificação atualizada de pilotos e construtores.
 
-## 🎯 Requisitos
+- Pitch
+https://www.youtube.com/watch?v=O5D_YSpjp6Y
 
-1. **Implementar a navegação**: Utilize `expo-router` para estruturar a navegação do app conforme o design.
-2. **Reproduzir o design**: Implemente os componentes seguindo fielmente o layout do Figma.
-3. **Estilização**: Utilize `nativewind` para manter um código organizado e estilização consistente.
+## Instalação
+- Clone o Repositório 
 
-## 🛠 Tecnologias Recomendadas
-
-- [Expo](https://expo.dev/)
-- [React Native](https://reactnative.dev/)
-- [Expo Router](https://docs.expo.dev/router/introduction/)
-- [NativeWind](https://www.nativewind.dev/)
-
-## 🚀 Passos para Iniciar
-
-1. **Instale as dependências**
-   ```bash
-   npm install
-   ```
-2. **Inicie o projeto**
-   ```bash
-   npx expo start
-   ```
-   
-Boa sorte e divirta-se codando! 🚀
