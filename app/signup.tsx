@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { Link, useRouter } from 'expo-router';
 import React, { useState } from 'react';
+import ControllerTextInput from '../components/ControllerTextInput';
 
 
 const useSchema = z.string();
@@ -24,6 +25,17 @@ const Signup = () => {
 
 return (
     <SafeAreaView>
+        <Text>Sign Up</Text>
+            <ControllerTextInput
+            key={index}
+            control={control}
+            placeholder="Name"
+            name="name"
+            error={errors.name}/>;
+            <ControllerTextInput
+            control={}/>;
+            <ControllerTextInput/>;
+        
   function handleSignUp({name, email, password}: User){
     signUp(name, email, password);
 
