@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import ControllerTextInput from '../components/ControllerTextInput';
 
-// Esquema de validação com Zod
 const userSchema = z.object({
   name: z.string().min(2, { message: "Nome é obrigatório" }),
   email: z.string().email({ message: "Email inválido" }),
@@ -15,7 +14,6 @@ const userSchema = z.object({
 
 const Signup = () => {
   const router = useRouter();
-  // const { signUp } = useAuth(); // Ative se estiver usando um hook de auth
   const {
     control,
     handleSubmit,
@@ -23,7 +21,6 @@ const Signup = () => {
   } = useForm();
 
   function handleSignUp({ name, email, password }: any) {
-    // signUp(name, email, password); // Ative se estiver usando um hook de auth
     router.replace("/home");
   }
 
