@@ -29,6 +29,11 @@ return (
 
     router.replace("/home");
   }
+  function customHandleSignUp(data: any){
+    const {name}
+    const
+  }
 }
+
 
 export default Signup
