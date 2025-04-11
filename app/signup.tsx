@@ -30,8 +30,13 @@ return (
     router.replace("/home");
   }
   function customHandleSignUp(data: any){
-    const {name}
-    const
+    const {name,email,password} = data;
+    const valid = userSchema.safeParse({name, email, password});
+    if (valid.sucess){
+        alert("formulario preenchido com sucesso")
+    } else {
+        alert("formulario não foi preenchido com sucesso")
+    }
   }
 }
 
