@@ -1,58 +1,89 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
 import { Link, useRouter } from 'expo-router';
-import React, { useState } from 'react';
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 import ControllerTextInput from '../components/ControllerTextInput';
 
-
-const useSchema = z.string();
+// Esquema de validação com Zod
 const userSchema = z.object({
-    name: z.string.min(2,{message:"Nome é obrigatório"}),
-    email: z.string.email({message:"Email é obrigatório"}),
-    phone:  z.string().optional(),
-    password: z
-        .string
-}
-)
+  name: z.string().min(2, { message: "Nome é obrigatório" }),
+  email: z.string().email({ message: "Email inválido" }),
+  phone: z.string().optional(),
+  password: z.string().min(6, { message: "Senha deve ter no mínimo 6 caracteres" }),
+});
+
 const Signup = () => {
-    const router = useRouter();
-    const {signUp} = useAuth();
-    const{
-        control,handleSubmit,
-        formState: {error}, 
-    } = useForm()
+  const router = useRouter();
+  // const { signUp } = useAuth(); // Ative se estiver usando um hook de auth
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-}
-
-return (
-    <SafeAreaView>
-        <Text>Sign Up</Text>
-            <ControllerTextInput
-            key={index}
-            control={control}
-            placeholder="Name"
-            name="name"
-            error={errors.name}/>;
-            <ControllerTextInput
-            control={}/>;
-            <ControllerTextInput/>;
-        
-  function handleSignUp({name, email, password}: User){
-    signUp(name, email, password);
-
+  function handleSignUp({ name, email, password }: any) {
+    // signUp(name, email, password); // Ative se estiver usando um hook de auth
     router.replace("/home");
   }
-  function customHandleSignUp(data: any){
-    const {name,email,password} = data;
-    const valid = userSchema.safeParse({name, email, password});
-    if (valid.sucess){
-        alert("formulario preenchido com sucesso")
+
+  function customHandleSignUp(data: any) {
+    const valid = userSchema.safeParse(data);
+    if (valid.success) {
+      alert("Formulário preenchido com sucesso");
+      handleSignUp(data);
     } else {
-        alert("formulario não foi preenchido com sucesso")
+      alert("Formulário não foi preenchido com sucesso");
     }
   }
-  </SafeAreaView>
-)
-}
 
+  return (
+    <SafeAreaView style={{ padding: 20 }}>
+      <Text style={{ fontSize: 24, marginBottom: 20 }}>Sign Up</Text>
 
-export default Signup
+      <ControllerTextInput
+        control={control}
+        placeholder="Nome"
+        name="name"
+        error={errors.name}
+      />
+
+      <ControllerTextInput
+        control={control}
+        placeholder="Email"
+        name="email"
+        error={errors.email}
+      />
+
+      <ControllerTextInput
+        control={control}
+        placeholder="Telefone"
+        name="phone"
+        error={errors.phone}
+      />
+
+      <ControllerTextInput
+        control={control}
+        placeholder="Senha"
+        name="password"
+        secureTextEntry
+        error={errors.password}
+      />
+
+      <TouchableOpacity
+        onPress={handleSubmit(customHandleSignUp)}
+        style={{
+          marginTop: 20,
+          backgroundColor: '#007bff',
+          padding: 15,
+          borderRadius: 8,
+          alignItems: 'center',
+        }}
+      >
+        <Text style={{ color: '#fff', fontWeight: 'bold' }}>Cadastrar</Text>
+      </TouchableOpacity>
+    </SafeAreaView>
+  );
+};
+
+export default Signup;
