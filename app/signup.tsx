@@ -14,15 +14,21 @@ const userSchema = z.object({
 }
 )
 const Signup = () => {
+    const router = useRouter();
+    const {signUp} = useAuth();
+    const{
+        control,handleSubmit,
+        formState: {error}, 
+    } = useForm()
+
+}
 
 return (
-     
-)
-  useEffect(() =>{
-    const obj = {name: undefined, email:"", password:""};
-    const valid = useSchema.safeParse(obj) ;
-    const valid2 = userSchema.safeParse("");
-  },[]);
+     //   useEffect(() =>{
+//     const obj = {name: undefined, email:"", password:""};
+//     const valid = useSchema.safeParse(obj) ;
+//     const valid2 = userSchema.safeParse("");
+//   },[]);
 
   function handleSignUp({name, email, password}: User){
     signUp(name, email, password);
@@ -38,6 +44,7 @@ return (
         alert("formulario não foi preenchido com sucesso")
     }
   }
+)
 }
 
 
