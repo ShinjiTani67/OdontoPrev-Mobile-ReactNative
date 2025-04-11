@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { Link, useRouter } from 'expo-router';
 import React, { useState } from 'react';
-import Card from '../components/Card';
 
 
 const useSchema = z.string();
@@ -24,12 +23,7 @@ const Signup = () => {
 }
 
 return (
-     //   useEffect(() =>{
-//     const obj = {name: undefined, email:"", password:""};
-//     const valid = useSchema.safeParse(obj) ;
-//     const valid2 = userSchema.safeParse("");
-//   },[]);
-
+    <SafeAreaView>
   function handleSignUp({name, email, password}: User){
     signUp(name, email, password);
 
@@ -44,6 +38,7 @@ return (
         alert("formulario não foi preenchido com sucesso")
     }
   }
+  </SafeAreaView>
 )
 }
 
