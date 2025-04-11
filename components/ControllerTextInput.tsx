@@ -33,12 +33,6 @@ const ControllerTextInput = ({
         onBlur={onBlur}
         onChangeText={onChange}
         value={value}
-        style={{
-          borderWidth: 1,
-          borderColor: error ? 'red' : '#ccc',
-          borderRadius: 8,
-          padding: 10,
-        }}
       />
       {error && <Text style={{ color: 'red', marginTop: 4 }}>{error.message}</Text>}
     </View>
